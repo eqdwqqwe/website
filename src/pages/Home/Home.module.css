@@ -1,0 +1,68 @@
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(120deg, rgba(178, 255, 178, 0.2), rgba(173, 216, 230, 0.2));
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+.brandName {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.content {
+  padding-top: 20vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 2px solid #000;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
